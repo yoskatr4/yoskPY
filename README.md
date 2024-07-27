@@ -25,6 +25,31 @@ Fonksiyonları kullanmak için aşağıdaki örnekleri inceleyebilirsiniz:
 ```python
 import yoskPY as yp
 
+# Konsola bir mesaj yazdırma
 yp.hello_world("Merhaba Dünya!")
-name = yp.yosk("Adınızı girin: ")
-print(f"Hoş geldiniz, {name}!")
+
+# Kullanıcıdan giriş alma ve selam verme
+isim = yp.yosk("Adınızı girin: ")
+yp.greet_user(isim)
+
+# İki sayının toplamını hesaplama
+toplam = yp.calculate_sum(5, 7)
+print(f"5 ve 7'nin toplamı: {toplam}")
+
+# Dosyaya içerik kaydetme ve okuma
+dosya_adi = "ornek_dosya.txt"
+icerik = "Bu dosyada saklanacak örnek içeriktir."
+yp.save_to_file(dosya_adi, icerik)
+okunan_icerik = yp.read_from_file(dosya_adi)
+print(f"{dosya_adi} dosyasından okunan içerik:\n{okunan_icerik}")
+
+# Bir mesajı tekrarlama
+tekrarlanan_mesaj = yp.repeat_message("Merhaba! ", 3)
+print(tekrarlanan_mesaj)
+
+# Yeni bir terminalde komut çalıştırma (Windows için)
+# 'echo Hello World' komutunu yeni bir terminalde çalıştırır
+yp.run_command('echo Hello World', new_terminal=True, os='windows')
+
+# Uygulama açma (Windows'ta Komut İstemi'ni açma)
+yp.open_app('cmd', os='windows')
