@@ -11,6 +11,8 @@
 - `save_to_file(filename, content)`: İçeriği bir dosyaya kaydeder.
 - `read_from_file(filename)`: Bir dosyadan içeriği okur.
 - `repeat_message(message, times)`: Bir mesajı belirli bir sayıda tekrarlar.
+- `run_command`: Yeni bir terminalde komut çalıştırır (bu örnekte Windows için).
+- `open_app`: Belirtilen uygulamayı açar (örneğin, Windows'ta Komut İstemi).
 
 ## Kurulum
 
