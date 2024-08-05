@@ -13,6 +13,10 @@
 - `repeat_message(message, times)`: Bir mesajı belirli bir sayıda tekrarlar.
 - `run_command`: Yeni bir terminalde komut çalıştırır (bu örnekte Windows için).
 - `open_app`: Belirtilen uygulamayı açar (örneğin, Windows'ta Komut İstemi).
+- `encrypt_text`: Bir yazıyı şifreler.
+- `decrypt_text`: encrypt_text Metohodu ile şirfelenen yazıyı geri çözer.
+- `basic_encrypt_text`: Bir yazıyı basit bir şekilde şifreler.
+- `basic_decrypt_text`: basic_encrypt_text Methıdu ile yazılan şifreyi geri çözer
 
 ## Kurulum
 
