@@ -53,3 +53,15 @@ yp.run_command('echo Hello World', new_terminal=True, os='windows')
 
 # Uygulama açma (Windows'ta Komut İstemi'ni açma)
 yp.open_app('cmd', os='windows')
+
+encrypt_text = yp.encrypt_text("selam")
+print(encrypt_text)
+
+decrypt_text = yp.decrypt_text("1218 264 1155 219 1164")
+print(decrypt_text)
+
+basic_encrypt_text = yp.basic_encrypt_text("selam")
+print(basic_encrypt_text)
+
+basic_decrypt_text = yp.basic_decrypt_text("22 6 15 1 16")
+print(basic_decrypt_text)
